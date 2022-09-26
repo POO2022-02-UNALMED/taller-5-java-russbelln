@@ -49,18 +49,12 @@ public class Zoologico {
     }
 
     public ArrayList<Zona> getZonas() {
-        return zonas;
+        return this.zonas;
     }
 
     public void setZonas(ArrayList<Zona> zonas) {
         this.zonas = zonas;
     }
 
-    public ArrayList<Zona> getZona() {
-        return zonas;
-    }
 
-    public void setZona(ArrayList<Zona> zonas) {
-        this.zonas = zonas;
-    }
 }
