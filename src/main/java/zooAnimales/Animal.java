@@ -13,6 +13,14 @@ public class Animal {
         Animal.totalAnimales+=1;
     }
 
+    public Animal( String nombre, int edad, String habitat, String genero) {
+        Animal.totalAnimales += 1;
+        this.nombre = nombre;
+        this.edad = edad;
+        this.habitat = habitat;
+        this.genero = genero;
+    }
+
     public Animal( String nombre, int edad, String habitat, String genero, Zona zona) {
         Animal.totalAnimales += 1;
         this.nombre = nombre;
@@ -26,8 +34,8 @@ public class Animal {
         return "desplazarse";
     }
 
-    public static void totalPorTipo(){
-        String mssg = "Mamiferos: "+Mamifero.cantidadMamiferos()+"\n"+"Aves: "+Ave.cantidadAves()+"\n"+"Reptiles: "+Reptil.cantidadReptiles()+"\n"+"Peces: "+Pez.cantidadPeces()+"\n"+"Anfibios: "+Anfibio.cantidadAnfibios();
+    public static String totalPorTipo(){
+        return "Mamiferos: "+Mamifero.cantidadMamiferos()+"\n"+"Aves: "+Ave.cantidadAves()+"\n"+"Reptiles: "+Reptil.cantidadReptiles()+"\n"+"Peces: "+Pez.cantidadPeces()+"\n"+"Anfibios: "+Anfibio.cantidadAnfibios();
 
 
     }

@@ -15,6 +15,14 @@ public class Anfibio extends  Animal{
 
     }
 
+    public Anfibio( String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso) {
+        super( nombre, edad, habitat, genero);
+        this.colorPiel = colorPiel;
+        this.venenoso = venenoso;
+        Anfibio.listado.add(this);
+
+    }
+
     public Anfibio( String nombre, int edad, String habitat, String genero, Zona zona, String colorPiel, boolean venenoso) {
         super( nombre, edad, habitat, genero, zona);
         this.colorPiel = colorPiel;
@@ -31,14 +39,14 @@ public class Anfibio extends  Animal{
         return "saltar";
     }
 
-    public int crearRana( String nombre, int edad, String genero, Zona zona){
-        new Anfibio(nombre, edad, "selva", genero, zona, "rojo", true);
+    public int crearRana( String nombre, int edad, String genero){
+        new Anfibio(nombre, edad, "selva", genero, "rojo", true);
         return cantidadAnfibios();
 
     }
 
-    public int crearSalamandra( String nombre, int edad, String genero, Zona zona){
-        new Anfibio(nombre, edad, "selva", genero, zona, "negro y amarillo", false);
+    public int crearSalamandra( String nombre, int edad, String genero){
+        new Anfibio(nombre, edad, "selva", genero, "negro y amarillo", false);
         return cantidadAnfibios();
 
     }
