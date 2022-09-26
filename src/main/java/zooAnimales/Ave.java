@@ -11,6 +11,7 @@ public class Ave extends Animal{
     private String colorPlumas;
 
     public Ave(){
+        super();
         Ave.listado.add(this);
     }
 
