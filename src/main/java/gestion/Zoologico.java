@@ -10,10 +10,13 @@ public class Zoologico {
     public Zoologico(){
 
     }
-
-    public Zoologico(String nombre, String ubicacion, ArrayList<Zona> zonas){
+    public Zoologico(String nombre, String ubicacion){
         this.nombre = nombre;
         this.ubicacion = ubicacion;
+    }
+
+    public Zoologico(String nombre, String ubicacion, ArrayList<Zona> zonas){
+        this(nombre, ubicacion);
         this.zonas = zonas;
     }
 
