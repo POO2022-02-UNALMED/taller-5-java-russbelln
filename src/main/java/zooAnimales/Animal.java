@@ -28,6 +28,7 @@ public class Animal {
         this.habitat = habitat;
         this.genero = genero;
         this.zona = zona;
+        zona.agregarAnimales(this);
     }
 
     public String movimiento(){
