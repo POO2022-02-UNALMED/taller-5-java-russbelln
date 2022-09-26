@@ -2,7 +2,7 @@ package zooAnimales;
 import gestion.*;
 
 public class Animal {
-    private static int totalAnimales;
+    private static int totalAnimales = 0;
     private String nombre;
     private int edad;
     private String habitat;
