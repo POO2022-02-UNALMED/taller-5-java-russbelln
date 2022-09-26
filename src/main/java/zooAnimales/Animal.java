@@ -26,7 +26,7 @@ public class Animal {
         return "desplazarse";
     }
 
-    public void totalPorTipo(){
+    public static void totalPorTipo(){
         String mssg = "Mamiferos: "+Mamifero.cantidadMamiferos()+"\n"+"Aves: "+Ave.cantidadAves()+"\n"+"Reptiles: "+Reptil.cantidadReptiles()+"\n"+"Peces: "+Pez.cantidadPeces()+"\n"+"Anfibios: "+Anfibio.cantidadAnfibios();
 
 
