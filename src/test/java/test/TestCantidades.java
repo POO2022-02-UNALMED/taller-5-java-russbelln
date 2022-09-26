@@ -52,7 +52,7 @@ public class TestCantidades {
 	
 	@Test
    	public void testCantidadAnimalesZonas(){
-		assertEquals(zoo.getZonas().get(0).cantidadAnimales(), 8, "Hay un problema en el metodo de cantidadAnimales en la clase Zona");
+		assertEquals(zoo.getZona().get(0).cantidadAnimales(), 8, "Hay un problema en el metodo de cantidadAnimales en la clase Zona");
     }
 	
 	@Test
