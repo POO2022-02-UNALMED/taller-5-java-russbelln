@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Zona {
     private String nombre;
-    private Zoologico zoo;
+    private  Zoologico zoo;
     private ArrayList<Animal> animales;
 
 
