@@ -37,17 +37,14 @@ public class Ave extends Animal{
         return "volar";
     }
 
-    public static int crearHalcon(String nombre, int edad, String genero){
+    public static Ave crearHalcon(String nombre, int edad, String genero){
         halcones += 1;
-        new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
-        return cantidadAves();
+        return new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
     }
 
-    public static int crearAguila(String nombre, int edad, String genero, Zona zona){
+    public static Ave crearAguila(String nombre, int edad, String genero, Zona zona){
         aguilas+=1;
-        new Ave(nombre, edad, "montanas", genero, zona, "blanco y amarillo");
-        return cantidadAves();
-
+        return new Ave(nombre, edad, "montanas", genero, zona, "blanco y amarillo");
     }
 
     public static ArrayList<Ave> getListado() {
