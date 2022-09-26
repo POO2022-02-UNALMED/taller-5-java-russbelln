@@ -20,7 +20,6 @@ public class Anfibio extends  Animal{
         this.colorPiel = colorPiel;
         this.venenoso = venenoso;
         Anfibio.listado.add(this);
-
     }
 
     public Anfibio( String nombre, int edad, String habitat, String genero, Zona zona, String colorPiel, boolean venenoso) {
